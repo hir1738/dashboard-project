@@ -15,19 +15,20 @@ import UserModal from "../UserModal/UserModal";
 import { mockUsers } from "../../data/mockUsers";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 
+const initialFilterState: FilterState = {
+  startDate: new Date("2025-01-01"),
+  endDate: new Date("2025-04-24"),
+  sectors: [],
+  categories: [],
+  selectedAttributes: [],
+  selectedMetrics: [],
+};
+
 const Dashboard: React.FC = () => {
   const [tabValue, setTabValue] = useState(0);
   const [openUserModal, setOpenUserModal] = useState(false);
   const [currentUser, setCurrentUser] = useState<User>(mockUsers[0]);
-
-  const [filters, setFilters] = useState<FilterState>({
-    startDate: new Date("2025-01-01"),
-    endDate: new Date("2025-04-24"),
-    sectors: [],
-    categories: [],
-    selectedAttributes: [],
-    selectedMetrics: [],
-  });
+  const [filters, setFilters] = useState<FilterState>(initialFilterState);
 
   const handleTabChange = (_: React.SyntheticEvent, newValue: number) => {
     setTabValue(newValue);
@@ -35,6 +36,7 @@ const Dashboard: React.FC = () => {
 
   const handleUserChange = (user: User) => {
     setCurrentUser(user);
+    setFilters(initialFilterState);
     setOpenUserModal(false);
   };
 
