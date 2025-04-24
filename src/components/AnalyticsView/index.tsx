@@ -11,20 +11,21 @@ interface AnalyticsViewProps {
 
 const AnalyticsView: React.FC<AnalyticsViewProps> = ({ user, filters }) => {
   const filteredData = user.data.filter((item) => {
-    if (filters.startDate && new Date(item.startDate) < filters.startDate)
-      return false;
-    if (filters.endDate && new Date(item.endDate) > filters.endDate)
-      return false;
-
+    const itemStartDate = new Date(item.startDate);
+    const itemEndDate = new Date(item.endDate);
+    
+    if (filters.startDate && itemEndDate < filters.startDate) return false;
+    if (filters.endDate && itemStartDate > filters.endDate) return false;
+  
     if (filters.sectors.length > 0 && !filters.sectors.includes(item.sector))
       return false;
-
+  
     if (
       filters.categories.length > 0 &&
       !filters.categories.includes(item.category)
     )
       return false;
-
+  
     return true;
   });
 

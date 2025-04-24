@@ -10,13 +10,14 @@ const Dashboard: React.FC = () => {
   const [tabValue, setTabValue] = useState(0);
   const [openUserModal, setOpenUserModal] = useState(false);
   const [currentUser, setCurrentUser] = useState<User>(mockUsers[0]);
+  
   const [filters, setFilters] = useState<FilterState>({
-    startDate: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000),
-    endDate: new Date(),
+    startDate: new Date("2025-04-01"), 
+    endDate: new Date("2025-04-24"),  
     sectors: [],
     categories: [],
-    selectedAttributes: [],
-    selectedMetrics: [],
+    selectedAttributes: ["country", "state", "city", "sector", "category"], 
+    selectedMetrics: ["mySpend"],
   });
 
   const handleTabChange = (_: React.SyntheticEvent, newValue: number) => {
