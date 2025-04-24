@@ -21,8 +21,8 @@ const Dashboard: React.FC = () => {
   const [currentUser, setCurrentUser] = useState<User>(mockUsers[0]);
 
   const [filters, setFilters] = useState<FilterState>({
-    startDate: new Date("2025-03-15"),
-    endDate: new Date("2025-05-15"),
+    startDate: new Date("2025-01-01"),
+    endDate: new Date("2025-04-24"),
     sectors: [],
     categories: [],
     selectedAttributes: [],

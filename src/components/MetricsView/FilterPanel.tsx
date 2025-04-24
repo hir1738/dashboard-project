@@ -53,9 +53,9 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
     { value: "lostStoreSpend", label: "Lost Store Spend" },
   ];
 
-  const maxDate = new Date("2026-12-31");
-  const minDate = new Date("2024-01-01");
-  minDate.setFullYear(minDate.getFullYear() - 1);
+  const maxDate = new Date(); 
+  const minDate = new Date();
+  minDate.setFullYear(minDate.getFullYear() - 1); 
 
   const handleSectorChange = (event: SelectChangeEvent<string[]>) => {
     onFilterChange({ sectors: event.target.value as string[] });
