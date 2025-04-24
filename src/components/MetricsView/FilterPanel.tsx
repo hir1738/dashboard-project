@@ -9,6 +9,8 @@ import {
   ListItemText,
   OutlinedInput,
   SelectChangeEvent,
+  Paper,
+  Typography,
 } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -51,8 +53,8 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
     { value: "lostStoreSpend", label: "Lost Store Spend" },
   ];
 
-  const maxDate = new Date();
-  const minDate = new Date();
+  const maxDate = new Date("2026-12-31");
+  const minDate = new Date("2024-01-01");
   minDate.setFullYear(minDate.getFullYear() - 1);
 
   const handleSectorChange = (event: SelectChangeEvent<string[]>) => {
@@ -76,8 +78,11 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
   };
 
   return (
-    <Box sx={{ p: 2, border: "1px solid #e0e0e0", borderRadius: 1 }}>
-      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2 }}>
+    <Paper sx={{ p: 3, mb: 3, borderRadius: 2, boxShadow: 2 }}>
+      <Typography variant="h6" sx={{ mb: 2, fontWeight: 600 }}>
+        Filters
+      </Typography>
+      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
         <Box sx={{ flex: "1 1 100%", maxWidth: { xs: "100%", md: "48%" } }}>
           <LocalizationProvider dateAdapter={AdapterDateFns}>
             <Box sx={{ display: "flex", gap: 2 }}>
@@ -88,7 +93,13 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
                   minDate={minDate}
                   maxDate={maxDate}
                   onChange={(date) => onFilterChange({ startDate: date })}
-                  slotProps={{ textField: { fullWidth: true } }}
+                  slotProps={{
+                    textField: {
+                      fullWidth: true,
+                      variant: "outlined",
+                      size: "small",
+                    },
+                  }}
                 />
               </Box>
               <Box sx={{ flex: "1 1 50%" }}>
@@ -98,7 +109,13 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
                   minDate={minDate}
                   maxDate={maxDate}
                   onChange={(date) => onFilterChange({ endDate: date })}
-                  slotProps={{ textField: { fullWidth: true } }}
+                  slotProps={{
+                    textField: {
+                      fullWidth: true,
+                      variant: "outlined",
+                      size: "small",
+                    },
+                  }}
                 />
               </Box>
             </Box>
@@ -108,7 +125,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
         <Box sx={{ flex: "1 1 100%", maxWidth: { xs: "100%", md: "48%" } }}>
           <Box sx={{ display: "flex", gap: 2 }}>
             <Box sx={{ flex: "1 1 50%" }}>
-              <FormControl fullWidth>
+              <FormControl fullWidth size="small">
                 <InputLabel>Sector</InputLabel>
                 <Select
                   multiple
@@ -129,7 +146,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
               </FormControl>
             </Box>
             <Box sx={{ flex: "1 1 50%" }}>
-              <FormControl fullWidth>
+              <FormControl fullWidth size="small">
                 <InputLabel>Category</InputLabel>
                 <Select
                   multiple
@@ -153,7 +170,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
         </Box>
 
         <Box sx={{ flex: "1 1 100%", maxWidth: { xs: "100%", md: "48%" } }}>
-          <FormControl fullWidth>
+          <FormControl fullWidth size="small">
             <InputLabel>Group By Attributes</InputLabel>
             <Select
               multiple
@@ -186,7 +203,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
         </Box>
 
         <Box sx={{ flex: "1 1 100%", maxWidth: { xs: "100%", md: "48%" } }}>
-          <FormControl fullWidth>
+          <FormControl fullWidth size="small">
             <InputLabel>Metrics</InputLabel>
             <Select
               multiple
@@ -216,7 +233,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
           </FormControl>
         </Box>
       </Box>
-    </Box>
+    </Paper>
   );
 };
 

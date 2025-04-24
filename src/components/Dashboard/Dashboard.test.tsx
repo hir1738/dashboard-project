@@ -7,7 +7,6 @@ import Dashboard from "./Dashboard";
 
 const theme = createTheme();
 
-// Wrap component with necessary providers
 const renderWithProviders = (ui: React.ReactElement) => {
   return render(
     <ThemeProvider theme={theme}>
