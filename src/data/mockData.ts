@@ -7,32 +7,32 @@ export const mockDataUser1: DataItem[] = [
     city: "Mumbai",
     sector: "Retail",
     category: "Juice",
-    startDate: "2025-01-01",
-    endDate: "2025-01-31",
+    startDate: "2024-04-01",
+    endDate: "2024-04-30",
     mySpend: {
       current: 120000,
       reference: 100000,
       absoluteChange: 20000,
-      percentChange: 20
+      percentChange: 20,
     },
     sameStoreSpend: {
       current: 95000,
       reference: 90000,
       absoluteChange: 5000,
-      percentChange: 5.56
+      percentChange: 5.56,
     },
     newStoreSpend: {
       current: 15000,
       reference: 10000,
       absoluteChange: 5000,
-      percentChange: 50
+      percentChange: 50,
     },
     lostStoreSpend: {
       current: 10000,
       reference: 15000,
       absoluteChange: -5000,
-      percentChange: -33.33
-    }
+      percentChange: -33.33,
+    },
   },
   {
     country: "India",
@@ -40,33 +40,99 @@ export const mockDataUser1: DataItem[] = [
     city: "Bengaluru",
     sector: "Retail",
     category: "Snacks",
-    startDate: "2025-02-01",
-    endDate: "2025-02-28",
+    startDate: "2024-04-01",
+    endDate: "2024-04-30",
     mySpend: {
       current: 90000,
       reference: 85000,
       absoluteChange: 5000,
-      percentChange: 5.88
+      percentChange: 5.88,
     },
     sameStoreSpend: {
       current: 70000,
       reference: 75000,
       absoluteChange: -5000,
-      percentChange: -6.67
+      percentChange: -6.67,
     },
     newStoreSpend: {
       current: 10000,
       reference: 5000,
       absoluteChange: 5000,
-      percentChange: 100
+      percentChange: 100,
     },
     lostStoreSpend: {
       current: 10000,
       reference: 5000,
       absoluteChange: 5000,
-      percentChange: 100
-    }
-  }
+      percentChange: 100,
+    },
+  },
+  {
+    country: "USA",
+    state: "California",
+    city: "San Francisco",
+    sector: "Hospitality",
+    category: "Beverages",
+    startDate: "2024-04-01",
+    endDate: "2024-04-30",
+    mySpend: {
+      current: 130000,
+      reference: 110000,
+      absoluteChange: 20000,
+      percentChange: 18.18,
+    },
+    sameStoreSpend: {
+      current: 100000,
+      reference: 95000,
+      absoluteChange: 5000,
+      percentChange: 5.26,
+    },
+    newStoreSpend: {
+      current: 20000,
+      reference: 10000,
+      absoluteChange: 10000,
+      percentChange: 100,
+    },
+    lostStoreSpend: {
+      current: 10000,
+      reference: 15000,
+      absoluteChange: -5000,
+      percentChange: -33.33,
+    },
+  },
+  {
+    country: "USA",
+    state: "Texas",
+    city: "Austin",
+    sector: "Retail",
+    category: "Frozen Foods",
+    startDate: "2024-04-01",
+    endDate: "2024-04-30",
+    mySpend: {
+      current: 80000,
+      reference: 70000,
+      absoluteChange: 10000,
+      percentChange: 14.29,
+    },
+    sameStoreSpend: {
+      current: 60000,
+      reference: 55000,
+      absoluteChange: 5000,
+      percentChange: 9.09,
+    },
+    newStoreSpend: {
+      current: 10000,
+      reference: 10000,
+      absoluteChange: 0,
+      percentChange: 0,
+    },
+    lostStoreSpend: {
+      current: 10000,
+      reference: 5000,
+      absoluteChange: 5000,
+      percentChange: 100,
+    },
+  },
 ];
 
 export const mockDataUser2: DataItem[] = [
@@ -82,26 +148,26 @@ export const mockDataUser2: DataItem[] = [
       current: 110000,
       reference: 95000,
       absoluteChange: 15000,
-      percentChange: 15.79
+      percentChange: 15.79,
     },
     sameStoreSpend: {
       current: 85000,
       reference: 80000,
       absoluteChange: 5000,
-      percentChange: 6.25
+      percentChange: 6.25,
     },
     newStoreSpend: {
       current: 15000,
       reference: 5000,
       absoluteChange: 10000,
-      percentChange: 200
+      percentChange: 200,
     },
     lostStoreSpend: {
       current: 10000,
       reference: 12000,
       absoluteChange: -2000,
-      percentChange: -16.67
-    }
+      percentChange: -16.67,
+    },
   },
   {
     country: "UK",
@@ -115,27 +181,27 @@ export const mockDataUser2: DataItem[] = [
       current: 80000,
       reference: 75000,
       absoluteChange: 5000,
-      percentChange: 6.67
+      percentChange: 6.67,
     },
     sameStoreSpend: {
       current: 60000,
       reference: 65000,
       absoluteChange: -5000,
-      percentChange: -7.69
+      percentChange: -7.69,
     },
     newStoreSpend: {
       current: 15000,
       reference: 8000,
       absoluteChange: 7000,
-      percentChange: 87.5
+      percentChange: 87.5,
     },
     lostStoreSpend: {
       current: 5000,
       reference: 2000,
       absoluteChange: 3000,
-      percentChange: 150
-    }
-  }
+      percentChange: 150,
+    },
+  },
 ];
 
 export const mockDataUser3: DataItem[] = [
@@ -151,26 +217,26 @@ export const mockDataUser3: DataItem[] = [
       current: 95000,
       reference: 85000,
       absoluteChange: 10000,
-      percentChange: 11.76
+      percentChange: 11.76,
     },
     sameStoreSpend: {
       current: 75000,
       reference: 70000,
       absoluteChange: 5000,
-      percentChange: 7.14
+      percentChange: 7.14,
     },
     newStoreSpend: {
       current: 12000,
       reference: 8000,
       absoluteChange: 4000,
-      percentChange: 50
+      percentChange: 50,
     },
     lostStoreSpend: {
       current: 8000,
       reference: 7000,
       absoluteChange: 1000,
-      percentChange: 14.29
-    }
+      percentChange: 14.29,
+    },
   },
   {
     country: "Germany",
@@ -184,27 +250,27 @@ export const mockDataUser3: DataItem[] = [
       current: 105000,
       reference: 90000,
       absoluteChange: 15000,
-      percentChange: 16.67
+      percentChange: 16.67,
     },
     sameStoreSpend: {
       current: 80000,
       reference: 75000,
       absoluteChange: 5000,
-      percentChange: 6.67
+      percentChange: 6.67,
     },
     newStoreSpend: {
       current: 18000,
       reference: 12000,
       absoluteChange: 6000,
-      percentChange: 50
+      percentChange: 50,
     },
     lostStoreSpend: {
       current: 7000,
       reference: 3000,
       absoluteChange: 4000,
-      percentChange: 133.33
-    }
-  }
+      percentChange: 133.33,
+    },
+  },
 ];
 
 export const mockDataUser4: DataItem[] = [
@@ -220,26 +286,26 @@ export const mockDataUser4: DataItem[] = [
       current: 85000,
       reference: 78000,
       absoluteChange: 7000,
-      percentChange: 8.97
+      percentChange: 8.97,
     },
     sameStoreSpend: {
       current: 65000,
       reference: 60000,
       absoluteChange: 5000,
-      percentChange: 8.33
+      percentChange: 8.33,
     },
     newStoreSpend: {
       current: 12000,
       reference: 10000,
       absoluteChange: 2000,
-      percentChange: 20
+      percentChange: 20,
     },
     lostStoreSpend: {
       current: 8000,
       reference: 8000,
       absoluteChange: 0,
-      percentChange: 0
-    }
+      percentChange: 0,
+    },
   },
   {
     country: "Australia",
@@ -253,27 +319,27 @@ export const mockDataUser4: DataItem[] = [
       current: 110000,
       reference: 90000,
       absoluteChange: 20000,
-      percentChange: 22.22
+      percentChange: 22.22,
     },
     sameStoreSpend: {
       current: 85000,
       reference: 75000,
       absoluteChange: 10000,
-      percentChange: 13.33
+      percentChange: 13.33,
     },
     newStoreSpend: {
       current: 20000,
       reference: 12000,
       absoluteChange: 8000,
-      percentChange: 66.67
+      percentChange: 66.67,
     },
     lostStoreSpend: {
       current: 5000,
       reference: 3000,
       absoluteChange: 2000,
-      percentChange: 66.67
-    }
-  }
+      percentChange: 66.67,
+    },
+  },
 ];
 
 export const mockDataUser5: DataItem[] = [
@@ -289,26 +355,26 @@ export const mockDataUser5: DataItem[] = [
       current: 150000,
       reference: 130000,
       absoluteChange: 20000,
-      percentChange: 15.38
+      percentChange: 15.38,
     },
     sameStoreSpend: {
       current: 120000,
       reference: 110000,
       absoluteChange: 10000,
-      percentChange: 9.09
+      percentChange: 9.09,
     },
     newStoreSpend: {
       current: 25000,
       reference: 15000,
       absoluteChange: 10000,
-      percentChange: 66.67
+      percentChange: 66.67,
     },
     lostStoreSpend: {
       current: 5000,
       reference: 5000,
       absoluteChange: 0,
-      percentChange: 0
-    }
+      percentChange: 0,
+    },
   },
   {
     country: "Canada",
@@ -322,27 +388,27 @@ export const mockDataUser5: DataItem[] = [
       current: 180000,
       reference: 160000,
       absoluteChange: 20000,
-      percentChange: 12.5
+      percentChange: 12.5,
     },
     sameStoreSpend: {
       current: 140000,
       reference: 130000,
       absoluteChange: 10000,
-      percentChange: 7.69
+      percentChange: 7.69,
     },
     newStoreSpend: {
       current: 30000,
       reference: 20000,
       absoluteChange: 10000,
-      percentChange: 50
+      percentChange: 50,
     },
     lostStoreSpend: {
       current: 10000,
       reference: 10000,
       absoluteChange: 0,
-      percentChange: 0
-    }
-  }
+      percentChange: 0,
+    },
+  },
 ];
 
 export const mockDataUser6: DataItem[] = [
@@ -358,26 +424,26 @@ export const mockDataUser6: DataItem[] = [
       current: 220000,
       reference: 200000,
       absoluteChange: 20000,
-      percentChange: 10
+      percentChange: 10,
     },
     sameStoreSpend: {
       current: 180000,
       reference: 170000,
       absoluteChange: 10000,
-      percentChange: 5.88
+      percentChange: 5.88,
     },
     newStoreSpend: {
       current: 30000,
       reference: 20000,
       absoluteChange: 10000,
-      percentChange: 50
+      percentChange: 50,
     },
     lostStoreSpend: {
       current: 10000,
       reference: 10000,
       absoluteChange: 0,
-      percentChange: 0
-    }
+      percentChange: 0,
+    },
   },
   {
     country: "Japan",
@@ -391,27 +457,27 @@ export const mockDataUser6: DataItem[] = [
       current: 175000,
       reference: 160000,
       absoluteChange: 15000,
-      percentChange: 9.38
+      percentChange: 9.38,
     },
     sameStoreSpend: {
       current: 140000,
       reference: 130000,
       absoluteChange: 10000,
-      percentChange: 7.69
+      percentChange: 7.69,
     },
     newStoreSpend: {
       current: 25000,
       reference: 20000,
       absoluteChange: 5000,
-      percentChange: 25
+      percentChange: 25,
     },
     lostStoreSpend: {
       current: 10000,
       reference: 10000,
       absoluteChange: 0,
-      percentChange: 0
-    }
-  }
+      percentChange: 0,
+    },
+  },
 ];
 
 export const mockDataUser7: DataItem[] = [
@@ -427,26 +493,26 @@ export const mockDataUser7: DataItem[] = [
       current: 130000,
       reference: 120000,
       absoluteChange: 10000,
-      percentChange: 8.33
+      percentChange: 8.33,
     },
     sameStoreSpend: {
       current: 100000,
       reference: 95000,
       absoluteChange: 5000,
-      percentChange: 5.26
+      percentChange: 5.26,
     },
     newStoreSpend: {
       current: 20000,
       reference: 15000,
       absoluteChange: 5000,
-      percentChange: 33.33
+      percentChange: 33.33,
     },
     lostStoreSpend: {
       current: 10000,
       reference: 10000,
       absoluteChange: 0,
-      percentChange: 0
-    }
+      percentChange: 0,
+    },
   },
   {
     country: "Brazil",
@@ -460,27 +526,27 @@ export const mockDataUser7: DataItem[] = [
       current: 110000,
       reference: 100000,
       absoluteChange: 10000,
-      percentChange: 10
+      percentChange: 10,
     },
     sameStoreSpend: {
       current: 85000,
       reference: 80000,
       absoluteChange: 5000,
-      percentChange: 6.25
+      percentChange: 6.25,
     },
     newStoreSpend: {
       current: 15000,
       reference: 10000,
       absoluteChange: 5000,
-      percentChange: 50
+      percentChange: 50,
     },
     lostStoreSpend: {
       current: 10000,
       reference: 10000,
       absoluteChange: 0,
-      percentChange: 0
-    }
-  }
+      percentChange: 0,
+    },
+  },
 ];
 
 export const mockDataUser8: DataItem[] = [
@@ -496,26 +562,26 @@ export const mockDataUser8: DataItem[] = [
       current: 140000,
       reference: 120000,
       absoluteChange: 20000,
-      percentChange: 16.67
+      percentChange: 16.67,
     },
     sameStoreSpend: {
       current: 110000,
       reference: 100000,
       absoluteChange: 10000,
-      percentChange: 10
+      percentChange: 10,
     },
     newStoreSpend: {
       current: 20000,
       reference: 10000,
       absoluteChange: 10000,
-      percentChange: 100
+      percentChange: 100,
     },
     lostStoreSpend: {
       current: 10000,
       reference: 10000,
       absoluteChange: 0,
-      percentChange: 0
-    }
+      percentChange: 0,
+    },
   },
   {
     country: "South Africa",
@@ -529,27 +595,27 @@ export const mockDataUser8: DataItem[] = [
       current: 250000,
       reference: 220000,
       absoluteChange: 30000,
-      percentChange: 13.64
+      percentChange: 13.64,
     },
     sameStoreSpend: {
       current: 200000,
       reference: 180000,
       absoluteChange: 20000,
-      percentChange: 11.11
+      percentChange: 11.11,
     },
     newStoreSpend: {
       current: 35000,
       reference: 25000,
       absoluteChange: 10000,
-      percentChange: 40
+      percentChange: 40,
     },
     lostStoreSpend: {
       current: 15000,
       reference: 15000,
       absoluteChange: 0,
-      percentChange: 0
-    }
-  }
+      percentChange: 0,
+    },
+  },
 ];
 
 export const mockDataUser9: DataItem[] = [
@@ -565,26 +631,26 @@ export const mockDataUser9: DataItem[] = [
       current: 125000,
       reference: 115000,
       absoluteChange: 10000,
-      percentChange: 8.7
+      percentChange: 8.7,
     },
     sameStoreSpend: {
       current: 100000,
       reference: 95000,
       absoluteChange: 5000,
-      percentChange: 5.26
+      percentChange: 5.26,
     },
     newStoreSpend: {
       current: 15000,
       reference: 10000,
       absoluteChange: 5000,
-      percentChange: 50
+      percentChange: 50,
     },
     lostStoreSpend: {
       current: 10000,
       reference: 10000,
       absoluteChange: 0,
-      percentChange: 0
-    }
+      percentChange: 0,
+    },
   },
   {
     country: "France",
@@ -598,27 +664,27 @@ export const mockDataUser9: DataItem[] = [
       current: 115000,
       reference: 105000,
       absoluteChange: 10000,
-      percentChange: 9.52
+      percentChange: 9.52,
     },
     sameStoreSpend: {
       current: 90000,
       reference: 85000,
       absoluteChange: 5000,
-      percentChange: 5.88
+      percentChange: 5.88,
     },
     newStoreSpend: {
       current: 15000,
       reference: 10000,
       absoluteChange: 5000,
-      percentChange: 50
+      percentChange: 50,
     },
     lostStoreSpend: {
       current: 10000,
       reference: 10000,
       absoluteChange: 0,
-      percentChange: 0
-    }
-  }
+      percentChange: 0,
+    },
+  },
 ];
 
 export const mockDataUser10: DataItem[] = [
@@ -634,26 +700,26 @@ export const mockDataUser10: DataItem[] = [
       current: 300000,
       reference: 270000,
       absoluteChange: 30000,
-      percentChange: 11.11
+      percentChange: 11.11,
     },
     sameStoreSpend: {
       current: 240000,
       reference: 220000,
       absoluteChange: 20000,
-      percentChange: 9.09
+      percentChange: 9.09,
     },
     newStoreSpend: {
       current: 40000,
       reference: 30000,
       absoluteChange: 10000,
-      percentChange: 33.33
+      percentChange: 33.33,
     },
     lostStoreSpend: {
       current: 20000,
       reference: 20000,
       absoluteChange: 0,
-      percentChange: 0
-    }
+      percentChange: 0,
+    },
   },
   {
     country: "China",
@@ -667,25 +733,25 @@ export const mockDataUser10: DataItem[] = [
       current: 280000,
       reference: 250000,
       absoluteChange: 30000,
-      percentChange: 12
+      percentChange: 12,
     },
     sameStoreSpend: {
       current: 220000,
       reference: 200000,
       absoluteChange: 20000,
-      percentChange: 10
+      percentChange: 10,
     },
     newStoreSpend: {
       current: 40000,
       reference: 30000,
       absoluteChange: 10000,
-      percentChange: 33.33
+      percentChange: 33.33,
     },
     lostStoreSpend: {
       current: 20000,
       reference: 20000,
       absoluteChange: 0,
-      percentChange: 0
-    }
-  }
+      percentChange: 0,
+    },
+  },
 ];
