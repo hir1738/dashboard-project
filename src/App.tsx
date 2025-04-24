@@ -1,10 +1,10 @@
 import React from "react";
-import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import { CssBaseline, ThemeProvider, createTheme, Theme } from "@mui/material";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import Dashboard from "./components/Dashboard/Dashboard";
 
-const theme = createTheme({
+const theme: Theme = createTheme({
   palette: {
     primary: {
       main: "#2563eb",
@@ -55,7 +55,7 @@ const theme = createTheme({
   },
 });
 
-function App() {
+const App: React.FC = (): React.ReactElement => {
   return (
     <ThemeProvider theme={theme}>
       <LocalizationProvider dateAdapter={AdapterDateFns}>
@@ -64,6 +64,6 @@ function App() {
       </LocalizationProvider>
     </ThemeProvider>
   );
-}
+};
 
 export default App;
